@@ -2,11 +2,19 @@
 <html>
     <!-- Header where scripts and stylesheets are called -->
     <head>
+        <meta charset="utf-8">
         <!-- Calls to CSS Stylesheets -->
         <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet" type="text/css">
 
         <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/codemirror/CodeMirror/master/lib/codemirror.css">
+        <script type="text/javascript" src="https://cdn.rawgit.com/codemirror/CodeMirror/master/lib/codemirror.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/codemirror/CodeMirror/master/mode/xml/xml.js"></script>
+
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/carlo/jquery-base64/master/jquery.base64.min.js"></script>-->
 
         <!-- The main script is the entry point for the application -->
         <script data-main="js/main" src="lib/require/require.js"></script>
@@ -21,10 +29,18 @@
               <h1>Title</h1>
             </div>
 
-            <div id="svg_location"></div>
+            <textarea id="editor"></textarea>
+            <button id="test_btn" type="button">Submit</button>
+            <iframe id="result"></iframe>
+
 
         </div>
 
     </body>
+
+    <script>
+
+
+   </script>
 
 </html>
