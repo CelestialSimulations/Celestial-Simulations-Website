@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+    <!-- Header where scripts and stylesheets are called -->
+    <head>
+        <meta charset="utf-8">
+        <!-- Calls to CSS Stylesheets -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+
+        <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+
+        <!--<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/codemirror/CodeMirror/master/lib/codemirror.css">
+        <script type="text/javascript" src="https://cdn.rawgit.com/codemirror/CodeMirror/master/lib/codemirror.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/codemirror/CodeMirror/master/mode/xml/xml.js"></script>-->
+
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/carlo/jquery-base64/master/jquery.base64.min.js"></script>-->
+
+        <!-- The main script is the entry point for the application -->
+        <script data-main="js/main" src="lib/require/require.js"></script>
+
+    </head>
+
+    <body>
+
+      <div class="container-fluid">
+
+        <!--<div class="row">
+          <div class="col-md-8">.col-md-8</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>-->
+
+        <div class="row">
+          <!-- tutorial text goes here -->
+          <div class="col-md-3">
+            <div class="header">
+              fdsafsd
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <!-- Nav tabs -->
+            <div class="lang btn-group" data-toggle="buttons">
+              <label class="btn btn-primary active" href="#html_textarea" data-toggle="tab">
+                <input type="radio" checked>
+                HTML
+              </label>
+              <label class="btn btn-primary" href="#javascript_textarea" data-toggle="tab">
+                <input type="radio">
+                Javascript
+              </label>
+              <label class="btn btn-primary" href="#css_textarea" data-toggle="tab">
+                <input type="radio">
+                CSS
+              </label>
+            </div>
+
+            <!-- Tab panes -->
+            <div id="text_editors" class="tab-content">
+              <div role="tabpanel" class="tab-pane active editor_style" id="html_textarea"></div>
+              <div role="tabpanel" class="tab-pane editor_style" id="javascript_textarea"></div>
+              <div role="tabpanel" class="tab-pane editor_style" id="css_textarea"></div>
+            </div>
+
+            <button id="submit_btn" type="button" class="btn btn-primary">
+              <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+            </button>
+
+            <iframe id="result"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </body>
+
+</html>

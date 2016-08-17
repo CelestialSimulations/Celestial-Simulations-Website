@@ -4,8 +4,15 @@ Add main CSS here
 
 */
 .editor_style {
-    position: relative;
-    height: 200px;
-    border-radius: 10px;
-    font-size: 17px;
+    height: 23em;
+    border-bottom: solid 10px green;
+}
+#html_textarea, #javascript_textarea, #css_textarea {
+  font-size: 17px;
+}
+#result {
+  width: 100%;
+}
+div.lang label{
+  border-radius: 15px 15px 0px 0px;
 }
