@@ -9,15 +9,21 @@
 
         <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
 
-        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/codemirror/CodeMirror/master/lib/codemirror.css">
+        <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+
+        <!--<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/codemirror/CodeMirror/master/lib/codemirror.css">
         <script type="text/javascript" src="https://cdn.rawgit.com/codemirror/CodeMirror/master/lib/codemirror.js"></script>
-        <script type="text/javascript" src="https://cdn.rawgit.com/codemirror/CodeMirror/master/mode/xml/xml.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/codemirror/CodeMirror/master/mode/xml/xml.js"></script>-->
 
         <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdn.rawgit.com/carlo/jquery-base64/master/jquery.base64.min.js"></script>-->
 
         <!-- The main script is the entry point for the application -->
         <script data-main="js/main" src="lib/require/require.js"></script>
+
     </head>
 
     <body>
@@ -29,18 +35,26 @@
               <h1>Title</h1>
             </div>
 
-            <textarea id="editor"></textarea>
-            <button id="test_btn" type="button">Submit</button>
-            <iframe id="result"></iframe>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary active">
+                <input type="radio" name="options" id="html_btn" autocomplete="off" checked> Radio 1
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="options" id="js_btn" autocomplete="off"> Radio 2
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="options" id="css_btn" autocomplete="off"> Radio 3
+              </label>
+            </div>
 
+            <div class="editor_style" id="editor"></div>
+            <div class="editor_style" id="javascript_textarea"></div>
+            <div class="editor_style" id="css_textarea"></div>
+
+          <iframe id="result"></iframe>
 
         </div>
 
     </body>
-
-    <script>
-
-
-   </script>
 
 </html>

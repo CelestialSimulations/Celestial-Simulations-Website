@@ -3,3 +3,9 @@
 Add main CSS here
 
 */
+.editor_style {
+    position: relative;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 17px;
+}

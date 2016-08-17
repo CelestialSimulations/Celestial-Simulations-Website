@@ -10,7 +10,7 @@ requirejs.config({
         d3: 'lib/d3/d3.min',
         jquery: 'lib/jquery/jquery.min',
         jqueryui: 'lib/jquery-ui/jquery-ui.min',
-        underscore: 'lib/underscore/underscore-min'
+        underscore: 'lib/underscore/underscore-min',
     }
 })
 
