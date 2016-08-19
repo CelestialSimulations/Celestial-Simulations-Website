@@ -36,17 +36,23 @@
 
       <div class="container-fluid">
 
-        <!--<div class="row">
-          <div class="col-md-8">.col-md-8</div>
-          <div class="col-md-4">.col-md-4</div>
-        </div>-->
+        <nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">Project name</a>
+          </div>
+        </nav>
 
         <div class="row">
           <!-- tutorial text goes here -->
-          <div class="col-md-3">
+          <div class="col-md-3" style="background-color: green; height; 20em">
+            <button id="submit_btn" type="button" class="btn btn-primary btn-sm">
+              <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+            </button>
+
             <div class="header">
-              fdsafsd
+
             </div>
+
             <div class="content">
 
             </div>
@@ -54,20 +60,17 @@
 
           <div class="col-md-9">
             <!-- Nav tabs -->
-            <div class="lang btn-group" data-toggle="buttons">
-              <label class="btn btn-primary active" href="#html_textarea" data-toggle="tab">
-                <input type="radio" checked>
-                HTML
-              </label>
-              <label class="btn btn-primary" href="#javascript_textarea" data-toggle="tab">
-                <input type="radio">
-                Javascript
-              </label>
-              <label class="btn btn-primary" href="#css_textarea" data-toggle="tab">
-                <input type="radio">
-                CSS
-              </label>
-            </div>
+            <ul id="editor_toggle" class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#html_textarea" role="tab">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#javascript_textarea" role="tab">Javascript</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#css_textarea" role="tab">CSS</a>
+              </li>
+            </ul>
 
             <!-- Tab panes -->
             <div id="text_editors" class="tab-content">
@@ -76,12 +79,25 @@
               <div role="tabpanel" class="tab-pane editor_style" id="css_textarea"></div>
             </div>
 
-            <button id="submit_btn" type="button" class="btn btn-primary">
-              <!-- sighs disgustedly at the loss of the glyphicons -->
-              <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-            </button>
-
             <iframe id="result"></iframe>
+
+            <!--<div class="container">
+              <ul>
+                <li>Notebook X</lia>
+                <li class="selected">Domain Y</li>
+                <li>Dashboard Z</li>
+                <li>Dashboard Z2</li>
+                <li>Dashboard Z3</li>
+                <li>Dashboard Z4</li>
+              </ul>
+              <div class="hr"></div>
+            </div>
+
+            <div>
+              <p>Below a trapezoid tab</p>
+              <p class="tab">Trapezoid tab</p>
+            </div>-->
+
           </div>
 
         </div>

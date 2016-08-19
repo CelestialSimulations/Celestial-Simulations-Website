@@ -19,8 +19,11 @@ requirejs([
     'jquery',
     'd3',
     'js/models/graph',
-    'js/views/graph'
+    'js/views/code_tutorial_creator'
 ],function($, d3, Model, View) {
+
+  $('#desc').scrollTop($('#desc')[0].scrollHeight - $('#desc')[0].clientHeight);
+
 
   var data = [  ];
 

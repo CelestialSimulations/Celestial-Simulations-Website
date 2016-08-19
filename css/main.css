@@ -3,16 +3,107 @@
 Add main CSS here
 
 */
+body {
+  padding-top: 70px;
+}
 .editor_style {
     height: 23em;
     border-bottom: solid 10px green;
 }
 #html_textarea, #javascript_textarea, #css_textarea {
   font-size: 17px;
+  border-bottom: solid 1px #ddd;
+  border-left: solid 1px #ddd;
+  border-right: solid 1px #ddd;
 }
 #result {
   width: 100%;
+  background-color: white;
 }
-div.lang label{
-  border-radius: 15px 15px 0px 0px;
+#editor_toggle li a.active {
+  background-color: #272822;
+  border-bottom-color: none;
 }
+
+/*
+@border-color: #bbb;
+@bg-color: #ddd;
+@bg-color-selected: #eee;
+
+.container{
+  width:90%;
+  margin: 0 auto;
+}
+
+.hr {
+  border-bottom: 1px solid gray;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+  position:relative;
+  bottom: 9px;
+}
+
+ul {
+	position: relative;
+	z-index: 1;
+	white-space: nowrap;
+  margin: auto;
+}
+
+ul li {
+	position: relative;
+	display: inline-block;
+	padding: 1.5em 1.5em 1em;
+	color: inherit;
+	text-decoration: none;
+	margin: 0 -7px;
+}
+
+ul li::before{
+	border: .1em solid @border-color;
+}
+
+ul li::before {
+	content: ''; /* To generate the box *
+	position: absolute;
+	top: 0; right: 0; bottom: .5em; left: 0;
+	z-index: -1;
+	border-bottom: none;
+	border-radius: 10px 10px 0 0;
+	background: @bg-color;
+	box-shadow: 0 0 hsla(0,0%,100%,.5) inset;
+	transform: perspective(5px) rotateX(2deg);
+	transform-origin: bottom;
+}
+
+ul li.selected {
+	z-index: 2;
+}
+
+ul li.selected::before {
+	margin-bottom: -1px;
+	border-top-width: 1px;
+}
+
+ul li.selected::before{
+	background: @bg-color-selected;
+}
+
+.tab {
+  position: relative;
+	display: inline-block;
+	padding: 1em;
+	margin: 1em;
+  color:white;
+}
+
+.tab::before {
+	content: '';
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	z-index: -1;
+	background: black;
+	transform: perspective(10px) rotateX(3deg);
+  border-radius: 10px 10px 0 0;
+}*/

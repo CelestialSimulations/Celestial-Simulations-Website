@@ -24,6 +24,16 @@ define([
 
         draw_code_editor: function() {
 
+          /*$("#html_textarea").resizable(/*{
+            handles: "n, s",
+            resize: function (event, ui) {
+              ui.size.width = ui.originalSize.width;
+            }
+          }*);*/
+          /*$("div#html_textarea").resizable();
+
+          $("#result").resizable();*/
+
           var editor = ace.edit("html_textarea");
           editor.setTheme("ace/theme/monokai");
           editor.getSession().setMode("ace/mode/html");
